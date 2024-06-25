@@ -1,0 +1,85 @@
+const int leftMotorPin = 9;
+const int rightMotorPin = 3;
+
+
+// Array to store five sensor values
+int sensors[5];
+
+int last_proportional = 0;
+int integral = 0;
+
+void setup() {
+  pinMode(leftMotorPin, OUTPUT);
+  pinMode(rightMotorPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  readSensors(); // Reads sensor values into sensors array
+  int error = calculateError(); // Calculates proportional error
+  PID(error); // Implements PID control
+  delay(10); // Short delay to avoid sensor reading saturation
+}
+
+void readSensors() {
+  sensors[0] = analogRead(A1);
+  sensors[1] = analogRead(A2);
+  sensors[2] = analogRead(A3);
+  sensors[3] = analogRead(A4);
+  sensors[4] = analogRead(A5);
+}
+
+int calculateError() {
+  int weights[5] = {-2, -1, 0, 1, 2};
+  int error = 0;
+
+  for (int i = 0; i < 5; i++) {
+    error += weights[i] * sensors[i];
+  }
+
+  return error;
+}
+
+void PID(int error) {
+  float Kp = 0.2;
+  float Ki = 0.0001;
+  float Kd = 1.0;
+
+  int derivative = error - last_proportional;
+  integral += error;
+
+  int power_difference = Kp*error + Ki*integral + Kd*derivative;
+
+  int leftSpeed = constrain(255 - power_difference, 0, 255);
+  int rightSpeed = constrain(255 + power_difference, 0, 255);
+
+  analogWrite(leftMotorPin, leftSpeed);
+  analogWrite(rightMotorPin, rightSpeed);
+
+  last_proportional = error;
+}
+
+
+
+
+
+const int SENSOR_HISTORY = 5; // Number of past readings to store for averaging
+int sensorHistory[5][SENSOR_HISTORY] = {0}; // 5 sensors, with a history of SENSOR_HISTORY readings each
+int sensorIndex = 0; // Current position in the circular buffer
+
+void readSensors() {
+  for (int i = 0; i < 5; i++) {
+    // Save the current reading into the history buffer
+    sensorHistory[i][sensorIndex] = digitalRead(i + 6); // Assuming the sensor pins are 6, 7, 11, 12, and 13
+
+    // Compute the average for this sensor
+    int sum = 0;
+    for (int j = 0; j < SENSOR_HISTORY; j++) {
+      sum += sensorHistory[i][j];
+    }
+    sensors[i] = sum / SENSOR_HISTORY > 0.5 ? HIGH : LOW; // If the average is above 0.5, consider it HIGH, otherwise LOW
+  }
+
+  // Move the index for the next reading, wrapping around if necessary
+  sensorIndex = (sensorIndex + 1) % SENSOR_HISTORY;
+}

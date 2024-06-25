@@ -1,0 +1,198 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "IRLD014PBF" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "Q" (id 0) (at 5.08698 0.0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "IRLD014PBF" (id 1) (at 5.0812 -2.5406 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "IRLD014PBF:DIP762W56P254L490H457Q4P" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "Vishay Siliconix" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\nPower MOSFET,N-Ch,VDSS 60V,RDS(ON) 0.2Ohm,ID 1.7A,HD-1,PD 1.3W,VGS+/-10V,VF 1.6V | Vishay PCS IRLD014PBF\n" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "DIP-4 International Rectifier" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/IRLD014PBF/Vishay+Siliconix/view-part/?ref=eda" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/IRLD014PBF/Vishay+Siliconix/view-part/?ref=snap" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "IRLD014PBF" (id 10) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=608008&manufacturer=Vishay Siliconix&part_name=IRLD014PBF&search_term=None" (id 11) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "In Stock" (id 12) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "VISHAY" (id 13) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "IRLD014PBF_0_0"
+      (polyline
+        (pts (xy -3.6576 2.413) (xy -3.6576 -2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.6576 -2.54) (xy -5.08 -2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.0 1.905) (xy -2.0066 1.905)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.032 -1.905) (xy 0.0 -1.905)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.0 2.032) (xy 0.0 1.905)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.0 1.905) (xy 2.54 1.905)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 1.905) (xy 2.54 0.762)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 0.762) (xy 2.54 -1.905)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 -1.905) (xy 0.0 -1.905)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.0 -1.905) (xy 0.0 -2.032)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 0.762) (xy 1.905 -0.635)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.905 -0.635) (xy 3.175 -0.635)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 3.175 -0.635) (xy 2.54 0.762)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.905 0.762) (xy 2.54 0.762)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 0.762) (xy 3.175 0.762)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.286 0.0) (xy -0.762 -0.508)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -0.762 -0.508) (xy -0.762 0.0)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -0.762 0.0) (xy -0.762 0.508)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -0.762 0.508) (xy -2.286 0.0)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -0.889 0.254) (xy -2.286 0.0)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.143 0.254) (xy -2.032 0.0)) (stroke (width 0.3048))
+      )
+      (polyline
+        (pts (xy -2.032 0.0) (xy -0.889 -0.254)) (stroke (width 0.3048))
+      )
+      (polyline
+        (pts (xy -0.889 -0.254) (xy -0.889 0.254)) (stroke (width 0.3048))
+      )
+      (polyline
+        (pts (xy -0.889 0.254) (xy -1.905 0.0)) (stroke (width 0.3048))
+      )
+      (circle (center 0.0 -1.905) (radius 0.127)
+        (stroke (width 0.4064)) (fill (type none))
+      )
+      (circle (center 0.0 1.905) (radius 0.127)
+        (stroke (width 0.4064)) (fill (type none))
+      )
+      (text "D" (at -1.52401 2.54001 0)
+        (effects (font (size 0.812804 0.812804)) (justify bottom left))
+      )
+      (text "S" (at -1.78074 -3.43429 0)
+        (effects (font (size 0.814054 0.814054)) (justify bottom left))
+      )
+      (text "G" (at -4.83508 -1.27239 0)
+        (effects (font (size 0.814329 0.814329)) (justify bottom left))
+      )
+      (rectangle (start -2.79649 -2.54227) (end -2.032 -1.27)
+        (stroke (width 0.1)) (fill (type outline))
+      )
+      (rectangle (start -2.79754 1.27161) (end -2.032 2.54)
+        (stroke (width 0.1)) (fill (type outline))
+      )
+      (rectangle (start -2.79601 -0.889641) (end -2.032 0.889)
+        (stroke (width 0.1)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy -0.762 0.0) (xy -1.905 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.905 0.0) (xy -2.032 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.032 0.0) (xy -2.286 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 5.08) (xy 0.0 2.032)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -5.08) (xy 0.0 -2.032)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.762 0.0) (xy 0.0 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 0.0) (xy 0.0 -1.778)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 5.08) (xy 2.54 5.08)) (stroke (width 0.254))
+      )
+      (pin passive line (at 0.0 -7.62 90.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -7.62 -2.54 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 0.0 7.62 270.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 2.54 7.62 270.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)
